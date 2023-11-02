@@ -9,7 +9,7 @@ function ADUser-Generation {
         [ValidateRange(201,989)] 
         [string] $AreaCode = 727,
         [parameter(Mandatory=$false,HelpMessage="Number of user accounts to generate. (Default:15; Max:1500)")] 
-        [ValidateRange(1,1500)] 
+        [ValidateRange(1,40000)] 
         [int] $UserCount = 15,
         [parameter(Mandatory=$false,HelpMessage="Please enter a password for the generated users. (Default: 'P@ssw0rd1')")]
         [String] $Password = 'P@ssw0rd1'
